@@ -7,7 +7,7 @@ Tensor flow es una biblioteca desarrollada por Google que nos permite realizar M
 ## Grafos
 Es un conjunto de objetos llamados vértices o nodos unidos por enlaces llamados aristas o arcos, que permiten representar relaciones binarias entre elementos de un conjunto.
 
-![](https://userscontent2.emaze.com/images/049860f9-ecfa-431c-bc3f-42ad5bbe528d/3a2294b2-e7e0-4a4e-bde2-9a656395d636.png)
+![](https://raw.githubusercontent.com/w00x/tensorflow_tutorial/master/img/3a2294b2-e7e0-4a4e-bde2-9a656395d636.png)
 
 Una red neuronal es un grafo dirigido construido a partir de elementos computacionales basicos. Una red neuronal codifica funciones numericas.
 
@@ -17,7 +17,7 @@ Son un enfoque computacional, que se basa en una gran colección de unidades neu
 ### Neurona
 La unidad básica de una RNA es la neurona. Aunque hay varios tipos de neuronas diferentes, la mas comun es la de tipo McCulloch-Pitts. En la siguiente figura puede verse una representación de la misma.
 
-![](http://i174.photobucket.com/albums/w93/etohumb/RNA/sinapsisartificial.jpg)
+![](https://raw.githubusercontent.com/w00x/tensorflow_tutorial/master/img/sinapsisartificial.jpg)
 
 Una neurona artificial es un procesador elemental, en el sentido de que procesa un vector x (x1,x2,...xN) de entradas y produce un respuesta o salida única. Los elementos clave de una neurona artificial los podemos ver en la figura anterior y son los siguientes:
 
@@ -28,7 +28,7 @@ Una neurona artificial es un procesador elemental, en el sentido de que procesa 
 - Una regla de propagación. Con esas entradas y los pesos sinapticos, se suele hacer algun tipo de operación para obtener el valor del potencial postsinaptico (valor que es funcion de las entradas y los pesos y que es el que se utiliza en último término para realizar el procesamiento). Una de las operaciones mas comunes es sumar las entradas, pero teniendo en cuenta la importancia de cada una (el peso sináptico asociado a cada entrada). Es lo que se llama suma ponderada, aunque otras operaciones también son posibles.
 - Una función de activación. El valor obtenido con la regla de propagación, se filtra a través de una función conocida como función de activación y es la que nos da la salida de la neurona. Según para lo que se desee entrenar la red neuronal, se suele escoger una función de activación u otra en ciertas neuronas de la red. En la siguiente tabla se muestran las funciones de activación mas usuales.
 
-![](https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200304curso-glisa/redes_neuronales/curso-glisa-redes_neuronales-html/funca.jpg)
+![](https://raw.githubusercontent.com/w00x/tensorflow_tutorial/master/img/funca.jpg)
 
 En muchas ocasiones la razón para la aplicación de una función de activación distinta de la identidad surge de la necesidad de que las neuronas produzcan una salida acotada. Esto desde un punto de vista de similitud con el sistema biológico, no es tan descabellado, ya que las respuestas de las neuronas biológicas estan acotadas en amplitud. Además cada neurona tiene asociado un número denominado bías o umbral, que puede verse como un número que indica a partir de que valor del potencial postsináptico la neurona produce una salida significativa.
 
@@ -54,7 +54,7 @@ Si nos fijamos en la arquitectura podemos tener dos posibilidades distintas. Si 
 
 Por el contrario, si podemos trazar un camino de una neurona a sí misma la arquitectura presenta ciclos. Este tipo de redes se denominan recurrentes o realimentados (recurrent).
 
-![](https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200304curso-glisa/redes_neuronales/curso-glisa-redes_neuronales-html/tiposRNA.jpg)
+![](https://raw.githubusercontent.com/w00x/tensorflow_tutorial/master/img/tiposRNA.jpg)
 
 1. El otro criterio mas habitual para clasificar las redes neuronales es el tipo de aprendizaje que se utilice. Hay cuatro clases de aprendizaje distintos:
 
@@ -70,13 +70,13 @@ Por el contrario, si podemos trazar un camino de una neurona a sí misma la arqu
 
 Este es uno de los tipos de redes más comunes. Se basa en otra red mas simple llamada perceptrón simple solo que el número de capas ocultas puede ser mayor o igual que una. Es una red unidireccional (feedforward). La arquitectura típica de esta red es la siguiente:
 
-![](https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200304curso-glisa/redes_neuronales/curso-glisa-redes_neuronales-html/mlp2.jpg)
+![](https://raw.githubusercontent.com/w00x/tensorflow_tutorial/master/img/mlp2.jpg)
 
 Las neuronas de la capa oculta usan como regla de propagación la suma ponderada de las entradas con los pesos sinápticos wij y sobre esa suma ponderada se aplica una función de transferencia de tipo sigmoide, que es acotada en respuesta.
 
 El aprendizaje que se suele usar en este tipo de redes recibe el nombre de retropropagacion del error (backpropagation). Como funcion de coste global, se usa el error cuadratico medio. Es decir, que dado un par (xk, dk) correspondiente a la entrada k de los datos de entrenamiento y salida deseada asociada se calcula la cantidad:
 
-![](https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200304curso-glisa/redes_neuronales/curso-glisa-redes_neuronales-html/Errorcuadraticomedio.jpg)
+![](https://raw.githubusercontent.com/w00x/tensorflow_tutorial/master/img/Errorcuadraticomedio.jpg)
 
 que vemos que es la suma de los errores parciales debido a cada patrón (índice p), resultantes de la diferencia entre la salida deseada dp y la salida que da la red f(.) ante el vector de entrada xk. Si estas salidas son muy diferentes de las salidas deseadas, el error cuadratico medio sera grande. f es la función de activación de las neuronas de la capa de salida e y la salida que proporcionan las neuronas de la ultima capa oculta.
 
