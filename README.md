@@ -6,7 +6,9 @@ Tensor flow es una biblioteca desarrollada por Google que nos permite realizar M
 
 ## Grafos
 Es un conjunto de objetos llamados vértices o nodos unidos por enlaces llamados aristas o arcos, que permiten representar relaciones binarias entre elementos de un conjunto.
+
 ![](https://userscontent2.emaze.com/images/049860f9-ecfa-431c-bc3f-42ad5bbe528d/3a2294b2-e7e0-4a4e-bde2-9a656395d636.png)
+
 Una red neuronal es un grafo dirigido construido a partir de elementos computacionales basicos. Una red neuronal codifica funciones numericas.
 
 ## Redes neuronales
