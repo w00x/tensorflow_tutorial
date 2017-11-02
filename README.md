@@ -60,6 +60,10 @@ Por el contrario, si podemos trazar un camino de una neurona a sí misma la arqu
 
 2. Aprendizaje supervisado: En este tipo de aprendizaje se le proporciona a la RNA una serie de ejemplos consistentes en unos patrones de entrada, junto con la salida que debería dar la red. El proceso de entrenamiento consiste en el ajuste de los pesos para que la salida de la red sea lo más parecida posible a la salida desada. Es por ello que en cada iteración se use alguna función que nos de cuenta del error o el grado de acierto que esta cometiendo la red.
 
+Existen dos tipos de aprendizaje supervisado:
+2.1. Sistemas de Regresión de Aprendizaje de Máquina: Sistemas donde el valor que se predice está en algún lugar de un espectro continuo. Estos sistemas nos ayudan con preguntas tipo “¿Cuánto es?” o “¿Cuántos son?”.
+2.2. Sistemas de Clasificación de Aprendizaje de Máquina: Sistemas en los cuales se busca una predicción de sí-o-no, por ejemplo: “¿Este tumor es cancerígeno?”, “¿Esta galleta pasó nuestro estándar de calidad?” y preguntas por el estilo.
+
 3. Aprendizaje no supervisado o autoorganizado: En este tipo de aprendizaje se presenta a la red una serie de ejemplos pero no se presenta la respuesta deseada. Lo que hace la RNA es reconocer regularidades en el conjunto de entradas, es decir, estimar una funcion densidad de probabilidad p(x) que describe la distribucion de patrones x en el espacio de entrada Rn .
 
 4. Aprendizaje Híbrido: Es una mezcla de los anteriores. Unas capas de la red tienen un aprendizaje supervisado y otras capas de la red tienen un aprendizaje de tipo no supervisado. Este tipo de entrenamiento es el que tienen redes como las RBF.
