@@ -522,3 +522,4 @@ Los ejemplos anteriormente mencionados estan en este repositorio con los dataset
 - [relopezbriega](http://relopezbriega.github.io/blog/2016/06/05/tensorflow-y-redes-neuronales/)
 - [Herramientas en GNU/Linux para estudiantes universitarios](https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200304curso-glisa/redes_neuronales/curso-glisa-redes_neuronales-html/index.html)
 - [Ejemplo tensorflow con iris dataset](http://tneal.org/post/tensorflow-iris/TensorFlowIris/)
+- [Toptal](https://www.toptal.com/machine-learning/introducci%C3%B3n-a-la-teor%C3%ADa-de-aprendizaje-de-m%C3%A1quina-y-sus-aplicaciones-un-tutorial-visual-con-ejemplos/es)
